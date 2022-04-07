@@ -12,6 +12,12 @@ public class CriarConta {
 		
 		//sintaxe básica de acesso de um atributo de um objeto
 		System.out.println(primeiraConta.saldo);
+		
+		//sintaxe para chamar um método
+		Conta segundaConta = new Conta();
+		segundaConta.deposita(50);
+		System.out.println(segundaConta.saldo);
+		
 	}
 	
 }
