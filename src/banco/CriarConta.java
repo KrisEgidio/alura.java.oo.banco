@@ -18,6 +18,15 @@ public class CriarConta {
 		segundaConta.deposita(50);
 		System.out.println(segundaConta.saldo);
 		
+		//referência de classes diferentes
+		Cliente novoCliente = new Cliente();
+		novoCliente.cpf = "222.222.222-22";
+		novoCliente.nome = "Kris";
+		novoCliente.profissao = "Developer";
+		
+		segundaConta.titular = novoCliente;
+		System.out.println(segundaConta.titular.nome);
+		
 	}
 	
 }
