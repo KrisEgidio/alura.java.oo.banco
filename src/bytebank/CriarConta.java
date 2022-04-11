@@ -1,4 +1,4 @@
-package banco;
+package bytebank;
 
 public class CriarConta {
 	
