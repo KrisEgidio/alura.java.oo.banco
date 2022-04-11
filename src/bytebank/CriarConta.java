@@ -8,24 +8,23 @@ public class CriarConta {
 		Conta primeiraConta = new Conta();
 		
 		//sintaxe básica de atribuição de um atributo
-		primeiraConta.saldo = 200;
+		primeiraConta.deposita(200);
 		
 		//sintaxe básica de acesso de um atributo de um objeto
-		System.out.println(primeiraConta.saldo);
+		//System.out.println(primeiraConta.getSaldo());
 		
 		//sintaxe para chamar um método
 		Conta segundaConta = new Conta();
 		segundaConta.deposita(50);
-		System.out.println(segundaConta.saldo);
 		
 		//referência de classes diferentes
 		Cliente novoCliente = new Cliente();
-		novoCliente.cpf = "222.222.222-22";
-		novoCliente.nome = "Kris";
-		novoCliente.profissao = "Developer";
+		novoCliente.setCpf("222.222.222-22");
+		novoCliente.setNome("Kris");
+		novoCliente.setProfissao("Developer");
 		
-		segundaConta.titular = novoCliente;
-		System.out.println(segundaConta.titular.nome);
+		segundaConta.setTitular(novoCliente);
+		System.out.println(segundaConta.getTitular().getNome());
 		
 	}
 	

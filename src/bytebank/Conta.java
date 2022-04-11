@@ -2,10 +2,12 @@ package bytebank;
 
 public class Conta {
 	
-	double saldo;
-	int agencia;
-	int numero;
-	Cliente titular;
+	//atributo privado não pode ser modificado e nem lido a não ser pela própria classe
+	//encapsulamento
+	private double saldo;
+	private int agencia;
+	private int numero;
+	private Cliente titular;
 	
 	//exemplo de método do tipo conta
 	//método sem retorno
@@ -30,6 +32,34 @@ public class Conta {
 			return true;
 		}
 		return false;
+	}
+	
+	public double getSaldo() {
+		return this.saldo;
+	}
+	
+	public int getNumero() {
+		return this.numero;
+	}
+	
+	public int getAgencia() {
+		return this.agencia;
+	}
+	
+	public Cliente getTitular() {
+		return this.titular;
+	}
+	
+	public void setTitular(Cliente titular) {
+		this.titular = titular;
+	}
+	
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+	
+	public void setAgencia(int agencia) {
+		this.agencia = agencia;
 	}
 	
 }
