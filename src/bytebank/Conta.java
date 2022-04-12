@@ -8,6 +8,13 @@ public class Conta {
 	private int agencia;
 	private int numero;
 	private Cliente titular;
+	private static int total;//Static quer dizer que o atributo é da classe e não dos objetos
+	
+	public Conta(int agencia, int numero) {
+		this.agencia = agencia;
+		this.numero = numero;
+		Conta.total++;
+	}
 	
 	//exemplo de método do tipo conta
 	//método sem retorno
@@ -48,6 +55,11 @@ public class Conta {
 	
 	public Cliente getTitular() {
 		return this.titular;
+	}
+	
+	public static int getTotal()
+	{
+		return Conta.total;
 	}
 	
 	public void setTitular(Cliente titular) {
