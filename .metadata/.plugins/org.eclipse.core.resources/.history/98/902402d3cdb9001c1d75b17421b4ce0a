@@ -1,0 +1,32 @@
+package bytebank;
+
+public class CriarConta {
+	
+	public static void main(String []args) {
+		
+		//sintaxe básica de instanciação
+		Conta primeiraConta = new Conta();
+		
+		//sintaxe básica de atribuição de um atributo
+		primeiraConta.deposita(200);
+		
+		//sintaxe básica de acesso de um atributo de um objeto
+		System.out.println(primeiraConta.saldo);
+		
+		//sintaxe para chamar um método
+		Conta segundaConta = new Conta();
+		segundaConta.deposita(50);
+		System.out.println(segundaConta.saldo);
+		
+		//referência de classes diferentes
+		Cliente novoCliente = new Cliente();
+		novoCliente.cpf = "222.222.222-22";
+		novoCliente.nome = "Kris";
+		novoCliente.profissao = "Developer";
+		
+		segundaConta.titular = novoCliente;
+		System.out.println(segundaConta.titular.nome);
+		
+	}
+	
+}

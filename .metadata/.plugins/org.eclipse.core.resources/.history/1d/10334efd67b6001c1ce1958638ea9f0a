@@ -1,0 +1,17 @@
+package banco;
+
+public class CriarConta {
+	
+	public static void main(String []args) {
+		
+		//sintaxe básica de instanciação
+		Conta primeiraConta = new Conta();
+		
+		//sintaxe básica de atribuição de um atributo
+		primeiraConta.saldo = 200;
+		
+		//sintaxe básica de acesso de um atributo de um objeto
+		System.out.println(primeiraConta.saldo);
+	}
+	
+}
