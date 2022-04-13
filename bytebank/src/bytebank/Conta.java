@@ -57,8 +57,7 @@ public class Conta {
 		return this.titular;
 	}
 	
-	public static int getTotal()
-	{
+	public static int getTotal(){
 		return Conta.total;
 	}
 	
