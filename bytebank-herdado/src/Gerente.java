@@ -13,8 +13,9 @@ public class Gerente extends Funcionario {
 		this.senha = senha;
 	}
 	
-	/*public double getBonificacao() {
-		return this.salario;
-	}*/
+	//"super" indica que o atributo na classe mãe
+	public double getBonificacao() {
+		return super.getBonificacao() + super.salario;
+	}
 	
 }
