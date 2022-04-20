@@ -13,7 +13,7 @@ public class Gerente extends Funcionario {
 		this.senha = senha;
 	}
 	
-	//"super" indica que o atributo na classe mãe
+	//"super" indica que o atributo/método na classe mãe
 	public double getBonificacao() {
 		return super.getBonificacao() + super.salario;
 	}

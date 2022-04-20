@@ -10,12 +10,16 @@ public class TesteClasse {
 		gerente.setSalario(4500);
 		gerente.setSenha(12345);
 		
-		System.out.println(gerente.getNome());
-		System.out.println(gerente.getCpf());
-		System.out.println(gerente.getSalario());
-		System.out.println(gerente.getBonificacao());
-		System.out.println(gerente.autentica(1234));
-
+		//System.out.println(gerente.getNome());
+		//System.out.println(gerente.getCpf());
+		//System.out.println(gerente.getSalario());
+		//System.out.println(gerente.getBonificacao());
+		//System.out.println(gerente.autentica(1234));
+		
+		ControleBonificacao bonificacao = new ControleBonificacao();
+		bonificacao.registra(gerente);
+		System.out.println(bonificacao.getSoma());
+		
 		
 	}
 
