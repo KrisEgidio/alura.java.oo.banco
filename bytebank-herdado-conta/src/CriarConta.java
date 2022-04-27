@@ -5,7 +5,7 @@ public class CriarConta {
 	public static void main(String []args) {
 		
 		//sintaxe básica de instanciação
-		Conta primeiraConta = new Conta(1337, 24226);
+		Conta primeiraConta = new ContaCorrente(1337, 24226);
 		
 		//sintaxe básica de atribuição de um atributo
 		primeiraConta.deposita(200);
@@ -14,7 +14,7 @@ public class CriarConta {
 		//System.out.println(primeiraConta.getSaldo());
 		
 		//sintaxe para chamar um método
-		Conta segundaConta = new Conta(1010, 7);
+		Conta segundaConta = new ContaCorrente(1010, 7);
 		segundaConta.deposita(50);
 		
 		//referência de classes diferentes

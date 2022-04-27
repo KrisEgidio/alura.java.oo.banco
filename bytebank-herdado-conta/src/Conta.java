@@ -1,6 +1,6 @@
 
 
-public class Conta {
+public abstract class Conta {
 	
 	//atributo privado não pode ser modificado e nem lido a não ser pela própria classe
 	//encapsulamento
